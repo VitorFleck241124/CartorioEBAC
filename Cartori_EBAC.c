@@ -122,7 +122,8 @@ int main()
 	printf("Escolha a opção deseja no menu: \n\n");
 	printf("\t1 Registrar nomes \n");
 	printf("\t2 Consultar nomes \n");
-	printf("\t3 Deletar nomes \n\n"); //Fim do Menu
+	printf("\t3 Deletar nomes \n"); //Fim do Menu
+	printf("\t4 Sair do Sistema \n\n");
 	printf("Opção: ");
 	
 	scanf("%d", &opcao); //Armazenando a escolha do usuário
@@ -142,14 +143,16 @@ int main()
 		deletar();
 		break;
 		
+		case 4:
+		printf("Obrigado por utilizar o sistema!");
+		return 0;
+		break;
+		
 		default:
 		printf("Essa opção não está disponível.\n\n");
 		system("pause");
 		break;
-		
 		//Fim da seleção do usuário
 	}	
-		printf("Esse Software não tem direitos reservos.");
-
 }
 }
