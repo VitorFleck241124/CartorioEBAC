@@ -115,44 +115,44 @@ int main()
 	for (laco=1;laco=1;) //for = se
 	{
 	
-	system("cls"); //responsável por limpar a tela
-	setlocale(LC_ALL, "Portuguese"); //Definindo a Linguagem
+    	system("cls"); //responsável por limpar a tela
+    	setlocale(LC_ALL, "Portuguese"); //Definindo a Linguagem
 	
-	printf("\t~ ~ ~ Cartório da EBAC ~ ~ ~\n\n"); //Início do Menu
-	printf("Escolha a opção deseja no menu: \n\n");
-	printf("\t1 Registrar nomes \n");
-	printf("\t2 Consultar nomes \n");
-	printf("\t3 Deletar nomes \n"); 
-	printf("\t4 Sair do Sistema \n\n");
-	printf("Opção: "); //Fim do Menu
+    	printf("\t~ ~ ~ Cartório da EBAC ~ ~ ~\n\n"); //Início do Menu
+    	printf("Escolha a opção deseja no menu: \n\n");
+    	printf("\t1 Registrar nomes \n");
+    	printf("\t2 Consultar nomes \n");
+    	printf("\t3 Deletar nomes \n"); 
+    	printf("\t4 Sair do Sistema \n\n");
+    	printf("Opção: "); //Fim do Menu
 	
-	scanf("%d", &opcao); //Armazenando a escolha do usuário
-	system("cls");
+    	scanf("%d", &opcao); //Armazenando a escolha do usuário
+    	system("cls");
 	
-	switch(opcao) //Início da seleção do usuário
-	{
-		case 1: //fução para escolha do usuário (1,2,3,4,5,6... etc.)
-		registro(); //chamada de funções
-		break; //função para encerrar o loop
+     	switch(opcao) //Início da seleção do usuário
+        {
+    		case 1: //fução para escolha do usuário (1,2,3,4,5,6... etc.)
+	    	registro(); //chamada de funções
+	    	break; //função para encerrar o loop
 		
-		case 2:
-		consulta();
-		break;
+			case 2:
+    	   	consulta();
+     	   	break;
+  	  	
+            case 3:
+        	deletar();
+    		break;
 		
-		case 3:
-		deletar();
-		break;
+    		case 4:
+    		printf("Obrigado por utilizar o sistema!");
+    		return 0; //Retorna o valor a 0/ fecha o sistema
+        	break;
 		
-		case 4:
-		printf("Obrigado por utilizar o sistema!");
-		return 0; //Retorna o valor a 0/ fecha o sistema
-		break;
-		
-		default:
-		printf("Essa opção não está disponível.\n\n");
-		system("pause");
-		break;
-		//Fim da seleção do usuário
-	}	
-}
+    		default:
+    		printf("Essa opção não está disponível.\n\n");
+    		system("pause");
+    		break;
+    		//Fim da seleção do usuário
+    	}	
+	}
 }
